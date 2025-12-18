@@ -11,4 +11,4 @@ class Material(PolymorphicModel):
 
 class Media(models.Model):
     # file = models.FileField(upload_to="image")
-    url = models.URLField()
+    file = models.URLField()

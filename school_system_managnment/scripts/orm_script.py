@@ -186,7 +186,7 @@ def create_video(faker:Faker , session_id , school_id , media_id):
 
 def create_media(faker:Faker):
     media_data = {}
-    media_data['url'] = faker.image_url()
+    media_data['file'] = faker.image_url()
     media = Media.objects.create(**media_data)
     return media
 
