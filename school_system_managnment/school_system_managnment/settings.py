@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+=6i9r^_i!q7d8pjxf2$-1x_1&)igss_0(s4rd1*0%0d6992t+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["Domain From Ali" , "server_ip" , "localhost"]
 
 
 # Application definition
@@ -179,3 +179,5 @@ SIMPLE_JWT = {  "ACCESS_TOKEN_LIFETIME": timedelta(minutes=50),
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR , 'static')
